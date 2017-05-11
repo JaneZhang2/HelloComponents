@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && mkdir dist && webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/JaneZhang2/HelloComponents/issues"
   },
-  "homepage": "https://github.com/JaneZhang2/HelloComponents#readme"
+  "homepage": "https://github.com/JaneZhang2/HelloComponents#readme",
+  "dependencies": {
+    "HelloUI": "git+https://github.com/JaneZhang2/HelloUI.git"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
+  }
 }
